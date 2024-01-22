@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "backend/conexao.php";
 session_start();
 
 
@@ -34,17 +34,8 @@ if ($resultUsuario->num_rows > 0) {
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendar Novo</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+<title>Agendar Novo</title>
+   <?php require 'header.php'; ?>
 </head>
 <body>
 
@@ -75,7 +66,7 @@ if ($resultUsuario->num_rows > 0) {
     <div class="container mt-5">
         <h2>Agendar Novo</h2>
 
-        <form method="post" action="processa_agenda.php" class="mt-3">
+        <form method="post" action="backend/processa_agenda.php" class="mt-3">
             <div class="form-group">
                 <label for="appointment_date">Data do Agendamento:</label>
                 <input type="datetime-local" id="appointment_date" name="appointment_date" class="form-control" required>

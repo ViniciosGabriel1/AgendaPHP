@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "backend/conexao.php";
 
 // Inicie a sessão para acessar as variáveis de sessão
 session_start();
@@ -45,17 +45,8 @@ $resultAgendamentos = $conn->query($sqlAgendamentos);
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Sistema de Agendamento</title>
-    <!-- Adicione isso ao head de suas páginas -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+    <?php require 'header.php'; ?>
 </head>
 
 <body>
@@ -80,7 +71,7 @@ $resultAgendamentos = $conn->query($sqlAgendamentos);
                         <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Perfil</a>
                         <a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Configurações</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item logout" href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        <a class="dropdown-item logout" href="backend/logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
                     </div>
                 </li>
 
@@ -106,8 +97,8 @@ $resultAgendamentos = $conn->query($sqlAgendamentos);
                         echo $data_formatada . " às " . $horario_formatado . ": " . $rowAgendamento["description"] . " (Agendado por: " . $rowAgendamento["nome_usuario"] . ")";
                         ?>
                         <span class="float-right">
-                            <a href="editar.php?id=<?php echo $rowAgendamento["id"]; ?>" class="btn btn-sm btn-primary">Editar</a>
-                            <a href="excluir.php?id=<?php echo $rowAgendamento["id"]; ?>" class="btn btn-sm btn-danger">Excluir</a>
+                            <a href="backend/editar.php?id=<?php echo $rowAgendamento["id"]; ?>" class="btn btn-sm btn-primary">Editar</a>
+                            <a href="backend/excluir.php?id=<?php echo $rowAgendamento["id"]; ?>" class="btn btn-sm btn-danger">Excluir</a>
                         </span>
                     </li>
                 <?php endwhile; ?>

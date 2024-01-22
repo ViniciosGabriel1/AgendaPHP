@@ -3,10 +3,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <?php require 'header.php'; ?>
     <style>
         body {
             background-color: #f8f9fa;
@@ -25,7 +23,7 @@
             <div class="card-body">
                 <h2 class="card-title text-center mb-4">Cadastro</h2>
 
-                <form method="post" action="processa_cadastro.php">
+                <form method="post" action="backend/processa_cadastro.php">
                     <div class="form-group">
                         <label for="usuario">Usuário:</label>
                         <input type="text" id="usuario" name="usuario" class="form-control" required>
