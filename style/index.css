@@ -1,0 +1,22 @@
+
+
+.list-group-item{
+    background-color: var(--cor-3);
+    padding: 2%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+#editar{
+    background-color: var(--cor-8);
+    padding: 1%;
+    border-radius: 3px;
+    color: var(--cor-2);
+}
+
+#excluir{
+    background-color: var(--cor-9);
+    padding: 1%;
+    border-radius: 3px;
+    color: var(--cor-2);
+}

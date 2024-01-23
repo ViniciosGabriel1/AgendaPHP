@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: var(--cor-2);
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:var(--cor-7) ;
+}
+a:hover{
+    opacity: 0.7;
+}
+
+:root {
+    --cor-1: #16212E;
+    --cor-2: rgb(214, 214, 214);
+    --cor-3: #1D2A39;
+    --cor-4: #7C55FB;
+    --cor-5: #16212E;
+    --cor-6: #b6b3b3d5;
+    --cor-7: #6831A0;
+    --cor-8: green;
+    --cor-9: red;
+    --cor-10: #8A9097;
+    --cor-11: #654f7a;
+    --cor-12: rgb(179, 153, 7);
+}
+
+body{
+    background-color: var(--cor-1);
+}

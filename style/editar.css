@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form{
+    background-color: var(--cor-3);
+    width: 80%;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+}
+form input,textarea{
+    margin: 2%;
+    padding:1%;
+    color: var(--cor-1);
+    outline: none;
+    border: none;
+    background-color: var(--cor-1);
+    border-radius: 3px;
+    color: var(--cor-2);
+    border: 1px solid transparent;
+}
