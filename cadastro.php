@@ -5,7 +5,20 @@
 <head>
     <title>Cadastro</title>
     <?php require 'header.php'; ?>
+<<<<<<< HEAD
     <link rel="stylesheet" href="style/login_cadastro.css">
+=======
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 400px;
+            margin-top: 50px;
+        }
+    </style>
+>>>>>>> 3213bf317996c288ce9fb4fab3b779e47536f8cc
 </head>
 <body>
 
@@ -37,9 +50,12 @@
 
                     <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
                 </form>
+<<<<<<< HEAD
                 <div class="mt-3 text-center">
                 <p>Já tem uma conta? <a href="login.php">Faça Login</a></p>
             </div>
+=======
+>>>>>>> 3213bf317996c288ce9fb4fab3b779e47536f8cc
             </div>
         </div>
     </div>

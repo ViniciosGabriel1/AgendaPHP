@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -32,3 +33,70 @@ a:hover{
 body{
     background-color: var(--cor-1);
 }
+=======
+/* Estilos Gerais */
+body {
+    background-color: #f0f8ff; /* AliceBlue - Cor de fundo do corpo */
+}
+
+.container {
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.list-group-item {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.float-right {
+    margin-left: 10px;
+}
+
+.btn-primary,
+.btn-danger {
+    padding: 0.2rem 0.5rem;
+    margin-top: 5px;
+}
+
+.btn-success {
+    margin-top: 20px;
+}
+
+/* Navbar */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #17a2b8 !important; /* Azul-água-marinha */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+.dropdown-item.logout:hover,
+.dropdown-item.logout:focus {
+    color: #dc3545 !important; /* Vermelho */
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #007bff !important; /* Azul brilhante */
+}
+
+.custom-dropdown {
+    max-height: 200px; /* Ajuste conforme necessário */
+    overflow-y: auto;
+}
+
+/* Página de Agendamento */
+.container {
+    max-width: 400px;
+    margin-top: 100px;
+}
+
+/* Adicione mais estilos específicos para a página de agendamento conforme necessário */
+>>>>>>> 3213bf317996c288ce9fb4fab3b779e47536f8cc

@@ -42,7 +42,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="pt-br">
 <head>
     <title>Login</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="style/login_cadastro.css">
+=======
+>>>>>>> 3213bf317996c288ce9fb4fab3b779e47536f8cc
     <?php require 'header.php'; ?>
     <style>
         .alert-danger {
@@ -79,7 +82,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <!-- Botão de Cadastro -->
             <div class="mt-3 text-center">
+<<<<<<< HEAD
                 <p>Não tem uma conta? <a href="cadastro.php">Cadastre-se aqui</a></p>
+=======
+                <p>Não tem uma conta? <a href="cadastro.php">Cadastre-se aqui</a>.</p>
+>>>>>>> 3213bf317996c288ce9fb4fab3b779e47536f8cc
             </div>
         </div>
     </div>
