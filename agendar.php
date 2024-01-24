@@ -36,6 +36,7 @@ if ($resultUsuario->num_rows > 0) {
 <head>
 <title>Agendar Novo</title>
    <?php require 'header.php'; ?>
+   <link rel="stylesheet" href="style/editar.css">
 </head>
 <body>
 
@@ -55,11 +56,11 @@ if ($resultUsuario->num_rows > 0) {
                 <textarea id="description" name="description" rows="4" class="form-control" required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Agendar</button>
+            <button  type="submit" class="btn btn-primary">Agendar</button>
         </form>
 
         <br>
-        <a href="index.php" class="btn btn-secondary">Voltar para a página inicial</a>
+        <a  href="index.php" class="btn btn-secondary">Voltar para a página inicial</a>
     </div>
     <script src="js/menu.js"></script>
 </body>

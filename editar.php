@@ -49,11 +49,9 @@ $conn->close();
             <textarea id="description" name="description" rows="4" class="form-control" required><?= $description; ?></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary">Salvar Edição</button>
+        <button type="submit" id="saveedit" class="btn btn-primary">Salvar Edição</button>
+        <a id="cancelaredit" href="index.php" class="btn btn-secondary">Cancelar</a>
     </form>
-
-    <br>
-    <a href="../index.php" class="btn btn-secondary">Cancelar</a>
 </div>
 <script src="js/menu.js"></script>
 </body>

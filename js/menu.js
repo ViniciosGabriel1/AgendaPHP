@@ -9,6 +9,4 @@ function dropdownMenu(){
         dropdownMenu.style.display="none";
         statusDrop = "oculto";
     }
-
-
 }

@@ -7,12 +7,14 @@
 form{
     background-color: var(--cor-3);
     width: 80%;
+    padding: 5%;
 }
 .form-group{
     display: flex;
     align-items: center;
 }
 form input,textarea{
+    width: 80%;
     margin: 2%;
     padding:1%;
     color: var(--cor-1);
@@ -22,4 +24,20 @@ form input,textarea{
     border-radius: 3px;
     color: var(--cor-2);
     border: 1px solid transparent;
+}
+
+#saveedit{
+    background-color: var(--cor-7);
+    border: none;
+    padding: 2%;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 78%;
+}
+
+#cancelaredit{
+    background-color: var(--cor-1);
+    padding: 2%;
+    color: var(--cor-2);
+    border-radius: 3p
 }
